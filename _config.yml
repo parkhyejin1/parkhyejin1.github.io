@@ -4,6 +4,11 @@ title:            Parkhyejin Blog
 longtitle:        Parkhyejin Blog
 
 
+author:           HE Tao
+email:            sighingnow@gmail.com
+description: >
+  Build Jekyll site with the GitBook style.
+
 
 
 version:          1.0
