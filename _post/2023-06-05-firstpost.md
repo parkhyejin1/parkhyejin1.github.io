@@ -1,11 +1,5 @@
 ---
 layout : post
-title : "Welcome to parkhyejin Blog" 
+title : "Developer" 
 
-writer : Parkhyejin
-
-github 주소
-**https://github.com/parkhyejin1/parkhyejin1.github.io.git **
-
-date : 2023-06-05
-late_modified_at :2023-06-05
+---
