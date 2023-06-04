@@ -1,6 +1,6 @@
 ---
 layout : post
-title : "Welcome to parkhyejin Blog"
+title : "Welcome to parkhyejin Blog" 
 
 writer : Parkhyejin
 categories :
