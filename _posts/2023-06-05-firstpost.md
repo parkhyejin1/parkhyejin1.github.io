@@ -1,6 +1,6 @@
 ---
 layout : post
-title : "Welcome to Blog!"
+title : "Blog"
 excerpt: "gitblog 생성"
 categories: _Blog
 
