@@ -2,8 +2,7 @@
 layout : post
 title : "Welcome to Blog!"
 excerpt: "gitblog 생성"
-categories: 
--Blog
+categories: Blog
 
 tags : [developer, blog, git,Github]
 
