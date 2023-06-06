@@ -13,4 +13,7 @@ date : 2023-06-05
 last_modified_at : 2023-06-05
 ---
 
+Git BLog 첫 게시글 
+
+
 git 주소 :  https://github.com/parkhyejin1/parkhyejin1.github.io.git
