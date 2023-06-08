@@ -1,8 +1,8 @@
 ---
 layout : post
-title : "Blog"
+title : "Blog Test"
 excerpt: "gitblog 생성"
-categories: _Blog
+categories: _post
 
 tags : [developer, blog, git,Github]
 
