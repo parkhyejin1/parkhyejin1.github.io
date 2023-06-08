@@ -1,2 +1,2 @@
-Welcome to Developer Blog
+- java backend developer Blog -
 
