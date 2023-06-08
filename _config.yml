@@ -1,11 +1,14 @@
 # Configurations
 # Configurations
 title:            Hye Jin's blog
+
+longtitle:        Developer Blog
+
+#Site Settings
 name : "개린이 햄찌"
 boi : "Developer Blog"
 location: "SomeWhere"
-longtitle:        Developer Blog
-
+description: "java backend developer blog "
 
 author:           HE Tao
 email:            sighingnow@gmail.com
