@@ -2,7 +2,7 @@
 layout : post
 title : "SQLD"
 excerpt: "SQLD 개념 정리"
-categories: _SQLD
+categories: [TOP_SQLD, SUB_SQL종류]
 
 tags : [developer, blog, git,Github,SQLD,SQL]
 
