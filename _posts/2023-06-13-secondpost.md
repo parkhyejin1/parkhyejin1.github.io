@@ -14,14 +14,16 @@ last_modified_at : 2023-06-13
 ---
 
 
-SQL
+**SQL**
+
+
 
 -관계형 DB에서 데이터 정의, 조작, 제어를 위해 사용하는 언어
 
  
  
 
-SQL문장들의 종류
+**SQL문장들의 종류**
 
 -SQL은 여러가지 종류의 키워드 존재
 
@@ -31,8 +33,10 @@ SQL문장들의 종류
 
  
  
+ 
+ 
 
-DML(Data Manioulation Language): 데이터 조작어
+**DML(Data Manioulation Language): 데이터 조작어**
 
 -관계형 데이터베이스의 구조를 정의
 
@@ -51,7 +55,8 @@ ex)데이터를 테이블에 새로운 행 삽입, 원하지 않는 데이터삭
  
 
 
-DDL(Data Definition Language) : 데이터 정의어
+
+**DDL(Data Definition Language) : 데이터 정의어**
 
 -테이블에서 데이터를 입력, 수정, 삭제, 조회
 
@@ -72,7 +77,7 @@ Rename - 이름 변경
  
  
 
-DCL(Data Control Language) :데이터 제어어
+**DCL(Data Control Language) :데이터 제어어**
 
 -데이터베이스 사용자에게 권한을 부여, 회수
 
@@ -89,7 +94,7 @@ Truncate - 삭제( Autocommit/ 로그제거/ 테이블 스키마 유지 - 초기
  
  
 
-TCL(Transaction Control Language) : 트랜잭션 제어어 
+**TCL(Transaction Control Language) : 트랜잭션 제어어 **
 
 -트랜잭션을 제어하는 명령어 
 
@@ -107,7 +112,7 @@ Savepoint
  
  
 
-트랜잭션 (Transation): 데이터베이스 작업을 처리하는 단위
+**트랜잭션 (Transation): 데이터베이스 작업을 처리하는 단위**
 
 -트랜잭션 특징 : 원자성 /일관성 / 고립성 / 지속성
 
