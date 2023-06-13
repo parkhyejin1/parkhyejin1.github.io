@@ -1,6 +1,6 @@
 ---
 layout : post
-title : "SQLD"
+title : "SQL 종류"
 subtitle: "SQL 종류"
 excerpt: "SQLD 개념 정리"
 categories: _SQLD
