@@ -15,7 +15,7 @@ last_modified_at : 2023-06-13
 ---
 
 
-<span style = 'background-color:f5f0ff'>**SQL**</span>
+**SQL**
 
 
 
