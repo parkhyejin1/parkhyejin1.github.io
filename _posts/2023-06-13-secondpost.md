@@ -94,7 +94,7 @@ Truncate - 삭제( Autocommit/ 로그제거/ 테이블 스키마 유지 - 초기
  
  
 
-**TCL(Transaction Control Language) : 트랜잭션 제어어 **
+**TCL(Transaction Control Language) : 트랜잭션 제어어**
 
 -트랜잭션을 제어하는 명령어 
 
