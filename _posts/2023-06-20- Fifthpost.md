@@ -269,11 +269,15 @@ public class Main {
 Class Loader를 통해 Class 파일들을 JVM으로 로딩
 로딩된 class 파일들은 Execution engine을 통해 해석
 해석된 바이트코드는 Runtime Data Areas에 배치되어 실질적인 수행
-JVM 구조
 
- 
+<br/><br/> 
+
+
+**JVM 구조**
 
 > Class Loader, Exection engine, Runtime Data Area, Garbage Collector
+
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fdwn4GP%2FbtrBQEnxXI5%2FYwktMYrsomqHZzWrscwZ11%2Fimg.png)
 
   <br/><br/>
 
