@@ -299,7 +299,7 @@ Class Loader를 통해 Class 파일들을 JVM으로 로딩
 
 
  
-**Runtime Data Area는 크게 5가지 영역으로 분배**
+** - Runtime Data Area는 크게 5가지 영역으로 분배**
 
 
 ▶ 모든 스레드에서 공유하는 영역 
