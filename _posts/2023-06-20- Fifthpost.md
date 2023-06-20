@@ -384,7 +384,7 @@ Native Method
 
 3. Paraller Old GC
 
--Paraller GC는 Young영역에서만 멀티스레드를 사용
+ - Paraller GC는 Young영역에서만 멀티스레드를 사용
 
  - BUT 이건 Old 영역까지 멀티스레드를 사용
 
