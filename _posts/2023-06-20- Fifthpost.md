@@ -374,35 +374,35 @@ Native Method
 
  
 
-1. Serial GC
+-  Serial GC
 
- - 단순 방식
+*단순 방식
 
- - 싱글 스레드 동작, 느림
+ *싱글 스레드 동작, 느림
 
- - Mark-sweep-compact 알고리즘(mark하고, sweep(지우기)하고, compact(빈공간을 채워넣음)
+ *Mark-sweep-compact 알고리즘(mark하고, sweep(지우기)하고, compact(빈공간을 채워넣음)
 
- - 적은 메모리, CPU 코어 갯수 적을때 적합
-
- 
-
-2. Paraller GC
-
- - JAVA8 defualt GC
-
- - Serial GC와 알고리즘은 같지만 ,  GC를 처리하는 Thread가 여러개
-
- - 메모리, 코어 충분할때 적합
+ *적은 메모리, CPU 코어 갯수 적을때 적합
 
  
 
-3. Paraller Old GC
+- Paraller GC
 
- - Paraller GC는 Young영역에서만 멀티스레드를 사용
+ *JAVA8 defualt GC
 
- - BUT 이건 Old 영역까지 멀티스레드를 사용
+ *Serial GC와 알고리즘은 같지만 ,  GC를 처리하는 Thread가 여러개
 
- - Paraller GC에서 Old GC 알고리즘을 개선한 버전
+ *메모리, 코어 충분할때 적합
+
+ 
+
+- Paraller Old GC
+
+*Paraller GC는 Young영역에서만 멀티스레드를 사용
+
+*BUT 이건 Old 영역까지 멀티스레드를 사용
+
+*Paraller GC에서 Old GC 알고리즘을 개선한 버전
 
  
  <br/><br/>
