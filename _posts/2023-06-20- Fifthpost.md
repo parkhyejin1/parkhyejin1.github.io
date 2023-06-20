@@ -297,6 +297,7 @@ Class Loader를 통해 Class 파일들을 JVM으로 로딩
 
 -Runtime Data Area는 JVM이 프로그램을 수행하기 위해 OS로 부터 별도로 할당 받은 메모리 공간
 
+ <br/><br/> 
 
 - **Runtime Data Area는 크게 5가지 영역으로 분배**
 
