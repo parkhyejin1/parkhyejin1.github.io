@@ -285,12 +285,22 @@ Class Loader를 통해 Class 파일들을 JVM으로 로딩
 -Class Loader는 자바 컴파일러가 .java 파일을 컴파일하여 .class 파일(바이트 코드)이 생성되면,
 이 생성된 클래스 파일들을 엮어 Runtime Data Area 형태로 메모리에 적재하는 역할
 
+
+
 -Execution Engine는 클래스 로더를 통해 JVM 내의 Runtime Data Area에 배치된 바이트 코드들을 명령어단위로 읽어서 실행. 메모리에 적재된 클래스들을 기계어로 변경해 명령어 단위로 실행하는 역할
+
+
 
 -Garbage Collector는 Heap 메모리 영역에 생성 된 객체들 중에 참조되지 않는 객체들을 탐색 후 제거하는 역할
 
+
+
 -Runtime Data Area는 JVM이 프로그램을 수행하기 위해 OS로 부터 별도로 할당 받은 메모리 공간
+
+
  
+**Runtime Data Area는 크게 5가지 영역으로 분배**
+
 
 ▶ 모든 스레드에서 공유하는 영역 
 
