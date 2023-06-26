@@ -13,7 +13,7 @@ date : 2023-06-05
 last_modified_at : 2023-06-05
 ---
 
-Git Blog 첫 게시글
+🙌 Git Blog 🙌
 
 - 혼자 개념정리하려고 만든 블로그 
 
