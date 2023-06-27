@@ -15,8 +15,7 @@ last_modified_at : 2023-06-27
 ---
 
 
-https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbZVpD7%2Fbtsluje36aP%2FlkK3YrmpAhPN5GkkaYeeQ1%2Fimg.png
-
+![mvc](https://github.com/parkhyejin1/parkhyejin1/assets/130957833/f19931af-6952-42a1-87c5-02ba90a35497)
 
   <br/><br/> 
 
