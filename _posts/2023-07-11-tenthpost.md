@@ -61,7 +61,7 @@ last_modified_at : 2023-07-11
  
 
 예시)
-```
+**
 @Data
 public class Student{
 Private Long id;
@@ -69,12 +69,13 @@ Private String name;
 Private Integer age;
 Private String phone;
 Private String email;
-}```
+}**
 
 >> Student.java
 
+   <br/><br/>
  
-```
+**
 INSERT INTO student(name,age,phone,email)
 VALUES('hamzzi',2,'010-1212-7777','hamzzi@gmail.com');
 
@@ -83,7 +84,7 @@ VALUES('Pig',4,'010-1212-7778','Pig@gmail.com');
 
 INSERT INTO student(name,age,phone,email)
 VALUES('gini',3,'010-1212-7747','gini@gmail.com');
-```
+**
 >>dml.sql
 
 
@@ -109,7 +110,8 @@ VALUES('gini',3,'010-1212-7747','gini@gmail.com');
    <br/><br/> 
 
 **StudentMapper**
-```
+
+**
 @Mapper
 
 Public interface StudentMapper{
@@ -124,11 +126,13 @@ Public interface StudentMapper{
     @Select("SELECT * FROM students")
     List<Student> selectStudentAll();
 
-    @Select("SELECT * FROM students WHERE id = #{id}")
-    Student selectStudent(Long id);```
+  @Select("SELECT * FROM students WHERE id = #{id}")
+  Student selectStudent(Long id);
+    }
 
-```
-}
+**
+**
+
 @Update("UPDATE students SET " +
         "name = #{name}, " +
         "age = #{age}," +
@@ -139,16 +143,21 @@ void updateStudent(Student student);
 
 @Delete("DELETE FROM students " +
         "WHERE id = #{id}")
-void deleteStudent(Long id);```
+void deleteStudent(Long id);
+**
 
   <br/><br/> 
 
  **#{parameter}**
 
 = 매개변수로 받아온 값 대입 
-```
+
+
+**
 @Select("SELECT * FROM students WHERE id = #{id}")
-Student selectStudent(Long id);```
+Student selectStudent(Long id);
+
+**
 
 => 매개변수로 받아온 id값, #{id} 대입
  
@@ -194,44 +203,44 @@ Student selectStudent(Long id);```
  
 
  **StudentDto.java**
-
-```@Repository
-
+**
+@Repository
 public class StudentDao {
     private final SqlSessionFactory sessionFactory;
     public StudentDao(SqlSessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
-}```
+}
+**
 > sqlSessionFactory: 데이터베이스와 연결고 SQL 실행 모든것을 가진 객체
 
    <br/><br/> 
-```
+
 @Repository
 
 public class StudentDao {
 
-    public List<Student> readStudentAll() {
+  public List<Student> readStudentAll() {
         try (SqlSession session = sessionFactory.openSession()) {
             StudentMapper studentMapper = session.getMapper(StudentMapper.class);
             return studentMapper.selectStudentAll();
         }
     }
 
-    public void createStudent(Student student) {
+   public void createStudent(Student student) {
         try (SqlSession session = sessionFactory.openSession()) {
             StudentMapper studentMapper = session.getMapper(StudentMapper.class);
             studentMapper.insertStudent(student);
         }
     }
 
-    public Student readStudent(Long id) {
-        try (SqlSession session = sessionFactory.openSession()) {
+  public Student readStudent(Long id) {
+      try (SqlSession session = sessionFactory.openSession()) {
             StudentMapper studentMapper = session.getMapper(StudentMapper.class);
             return studentMapper.selectStudent(id);
         }
     }
-}```
+}
 
 > SqlSession : 핵심적 역할 객체 ,DB와 세션 나타냄
 
