@@ -71,7 +71,7 @@ Private Integer age;
 Private String phone;
 Private String email;
 } 
-
+```
 
 >> Student.java
 
@@ -86,7 +86,7 @@ VALUES('Pig',4,'010-1212-7778','Pig@gmail.com');
 
 INSERT INTO student(name,age,phone,email)
 VALUES('gini',3,'010-1212-7747','gini@gmail.com');
-
+```
 >>dml.sql
 
 
@@ -113,7 +113,7 @@ VALUES('gini',3,'010-1212-7747','gini@gmail.com');
 
 **StudentMapper**
 
-
+```
 @Mapper
 
 Public interface StudentMapper{
@@ -131,9 +131,9 @@ Public interface StudentMapper{
   @Select("SELECT * FROM students WHERE id = #{id}")
   Student selectStudent(Long id);
     }
+```
 
-
-
+```
 @Update("UPDATE students SET " +
         "name = #{name}, " +
         "age = #{age}," +
@@ -145,7 +145,7 @@ void updateStudent(Student student);
 @Delete("DELETE FROM students " +
         "WHERE id = #{id}")
 void deleteStudent(Long id);
-
+```
 
   <br/><br/> 
 
@@ -204,7 +204,7 @@ Student selectStudent(Long id);
  
 
  **StudentDto.java**
-
+```
 @Repository
 public class StudentDao {
     private final SqlSessionFactory sessionFactory;
@@ -212,11 +212,11 @@ public class StudentDao {
         this.sessionFactory = sessionFactory;
     }
 }
-
+```
 > sqlSessionFactory: 데이터베이스와 연결고 SQL 실행 모든것을 가진 객체
 
    <br/><br/> 
-
+```
 @Repository
 
 public class StudentDao {
@@ -242,7 +242,7 @@ public class StudentDao {
         }
     }
 }
-
+```
 > SqlSession : 핵심적 역할 객체 ,DB와 세션 나타냄
 
 > session.getMapper(StudedntMapper.class) :  mapper 인터페이스 구현 클래스 얻음
@@ -292,12 +292,18 @@ XML 파일에는 SQL 쿼리, 매개변수 매핑, 결과 매핑 등의 정보가
         SELECT * FROM students WHERE id = #{id};
     </select>
 
-</mapper>```
- 
+</mapper>
+ ```
+
+   <br/><br/> 
+
 ```
 <mapper namespace="com.example.mybatis.mapper.StudentXmlMapper"> 
 ...
-</mapper>```
+</mapper>
+```
+
+   <br/><br/> 
 
 
 mapper 파일 root 요소 , namesapce 속성 포함 
@@ -307,11 +313,18 @@ namespace 속성은 mapper 파일과 연결된 Java 인터페이스의 경로를
 위의 코드에선 "com.example.mybatis.mapper.StudentXmlMapper"가 네임스페이스로 사용
 
  
+   <br/><br/> 
+
+
+
 ```
 <select id="selectStudent" resultType="Student" parameterType="Long">
         SELECT * FROM students WHERE id = #{id};
-    </select>```
+    </select>
+```
 
+
+   <br/><br/> 
 
     
 쿼리는 데이터를 조회하기 위한 SQL 쿼리를 정의하는 부분
@@ -325,6 +338,9 @@ parameterType : SQL 쿼리의 매개변수로 전달되는 Java 객체의 타입
  
 
  
+   <br/><br/> 
+
+
 
  
 
@@ -347,29 +363,47 @@ mybatis:
   mapper-locations: "classpath:mybatis/mappers/*.xml"
   type-aliases-package: "com.example.mybatis.model"
   configuration:
-    map-underscore-to-camel-case: true```
+    map-underscore-to-camel-case: true
+```
+
+   <br/><br/> 
 
  ```   
 mybatis:
-  mapper-locations: "classpath:mybatis/mappers/*.xml"```
+  mapper-locations: "classpath:mybatis/mappers/*.xml"
+```
+
+   <br/><br/> 
+
 해당 부분이  클래스 경로에서 mybatis/mapper 디렉토리 아래에 있는 모든 XML 파일을 Mapper로 인식하도록 함.
 
 SQL 문이 포함된 Mapper XML 파일을 사용, 데이터베이스와 상호작용
 
 MyBatis는 XML 파일의 내용을 기반으로 SQL 문을 실행 , 결과 반환
 
- 
+
 
  
 
-StudentXmlMapper.java
+   <br/><br/> 
 
+
+
+
+ 
+
+**StudentXmlMapper.java**
+```
 import com.example.mybatis.model.Student;
 import java.util.List;
 
 public interface StudentXmlMapper {
     Student selectStudent(Long id);
 }
+```
+
+   <br/><br/> 
+
 MyBatis의 매퍼 인터페이스인 StudentXmlMapper.java 코드 
 
 mapper xml 파일에서 id로 지정한 값과 같은 이름으로 메서드를 선언
