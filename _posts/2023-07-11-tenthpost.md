@@ -161,7 +161,11 @@ Student selectStudent(Long id);
 **
 
 => 매개변수로 받아온 id값, #{id} 대입
+
  
+
+   <br/><br/> 
+
 
 **#{} , ${}**
 
