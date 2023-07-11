@@ -61,7 +61,8 @@ last_modified_at : 2023-07-11
  
 
 예시)
-**
+
+```
 @Data
 public class Student{
 Private Long id;
@@ -69,13 +70,14 @@ Private String name;
 Private Integer age;
 Private String phone;
 Private String email;
-}**
+} 
+
 
 >> Student.java
 
    <br/><br/>
  
-**
+```
 INSERT INTO student(name,age,phone,email)
 VALUES('hamzzi',2,'010-1212-7777','hamzzi@gmail.com');
 
@@ -84,7 +86,7 @@ VALUES('Pig',4,'010-1212-7778','Pig@gmail.com');
 
 INSERT INTO student(name,age,phone,email)
 VALUES('gini',3,'010-1212-7747','gini@gmail.com');
-**
+
 >>dml.sql
 
 
@@ -111,7 +113,7 @@ VALUES('gini',3,'010-1212-7747','gini@gmail.com');
 
 **StudentMapper**
 
-**
+
 @Mapper
 
 Public interface StudentMapper{
@@ -130,8 +132,7 @@ Public interface StudentMapper{
   Student selectStudent(Long id);
     }
 
-**
-**
+
 
 @Update("UPDATE students SET " +
         "name = #{name}, " +
@@ -144,7 +145,7 @@ void updateStudent(Student student);
 @Delete("DELETE FROM students " +
         "WHERE id = #{id}")
 void deleteStudent(Long id);
-**
+
 
   <br/><br/> 
 
@@ -203,7 +204,7 @@ Student selectStudent(Long id);
  
 
  **StudentDto.java**
-**
+
 @Repository
 public class StudentDao {
     private final SqlSessionFactory sessionFactory;
@@ -211,7 +212,7 @@ public class StudentDao {
         this.sessionFactory = sessionFactory;
     }
 }
-**
+
 > sqlSessionFactory: 데이터베이스와 연결고 SQL 실행 모든것을 가진 객체
 
    <br/><br/> 
